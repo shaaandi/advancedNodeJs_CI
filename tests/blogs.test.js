@@ -3,7 +3,7 @@ let page;
 describe("When user is loged in", async () => {
   beforeEach(async () => {
     page = await CustomPage.build();
-    await page.goto("localhost:3000/");
+    await page.goto("http://localhost:3000/");
     await page.login();
   });
 
